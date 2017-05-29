@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <!--上半部分-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="@mipmap/blue_bkg">
+
+        <ImageView
+            android:id="@+id/iv_main_setting"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:src="@mipmap/setting"/>
+
+        <ImageView
+            android:id="@+id/iv_main_logo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/heima"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_main_logo"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机卫士"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/tv_main_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                android:text="挖掘技术哪家强，山东技校找蓝翔"
+                android:textColor="@color/colorRed"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gv_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2">
+    </GridView>
+</LinearLayout>
